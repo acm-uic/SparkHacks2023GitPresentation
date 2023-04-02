@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +17,94 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-image="images/Sparkhacks2023Logo.png" data-background-size="500px" data-background-color="#6763C7" data-background-opacity="0.5" data-markdown>
+          <textarea data-template>
+            ## Introduction to GitHub and Git for Team Projects
+
+            With Christian BIngman (ACM) and Krish Bavana (LUG)
+            ---
+            ## What is Git?
+
+            Git allows you to have multiple people working on the same code at the same time and offers several tools and methods in order to help resolve conflicts between code changes.
+
+            Git is what is called a VCS or *Version Control System*
+          </textarea>
+        </section>
+				<section data-auto-animate>
+          <pre data-id="code-animation"><code data-line-numbers="5-6|14-19" >
+// Your Code
+return (
+    <>
+      <p>Product List</p>
+      <p><button onClick={fetchProducts}>Fetch Products</button></p>
+    </>
+)
+
+// Your Partner's Code
+return (
+    <>
+      <ul>
+      {
+        products
+          .map(product =>
+            <li key={product.id}>{product.name}&nbsp;{product.brand}</li>
+          )
+      }
+      </ul>
+    </>
+)
+          </code></pre>
+            
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation"><code data-line-numbers="4-13">
+return (
+    <>
+      <p>Product List</p>
+      <p><button onClick={fetchProducts}>Fetch Products</button></p>
+      <ul>
+      {
+        products
+          .map(product =>
+            <li key={product.id}>{product.name}&nbsp;{product.brand}</li>
+          )
+      }
+      </ul>
+    </>
+)
+          </code></pre>
+        </section>
+        <section data-markdown data-auto-animate>
+          <textarea data-template>
+            ## What is GitHub?
+            ---
+            GitHub is a frontend for the Git service that is owned by Microsoft and is free to use. 
+            ---
+            Microsoft adds on top of Git several features that are commonly used:
+            
+            - Issues
+            - Project Management
+            - Pull Requests
+            - Forking
+            - Convenient Editors
+            - and much more!
+          </textarea>
+        </section>
+        <section data-markdown data-auto-animate>
+          <textarea data-template>
+            ## What we will cover
+
+            - Creating a Repo
+            - Git
+              - Installation
+              - Branches
+              - Merging Changes
+              - Reverting Changes
+              - Other helpful commands
+            - Issues
+            - Project Management
+          </textarea>
+        </section>
 			</div>
 		</div>
 
