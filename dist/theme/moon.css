@@ -20,8 +20,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #002b36;
-  --r-main-font: Lato, sans-serif;
+  --r-background-color: #0A083A;
+  --r-main-font: "Montserrat";
   --r-main-font-size: 40px;
   --r-main-color: #93a1a1;
   --r-block-margin: 20px;
