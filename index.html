@@ -80,7 +80,7 @@ return (
             ---
             GitHub is a frontend for the Git service that is owned by Microsoft and is free to use. 
             ---
-            Microsoft adds on top of Git several features that are commonly used:
+            Microsoft adds on top of Git several powerful features:
             
             - Issues
             - Project Management
@@ -95,14 +95,160 @@ return (
             ## What we will cover
 
             - Creating a Repo
+            - Issues
+            - Project Management
             - Git
-              - Installation
               - Branches
               - Merging Changes
               - Reverting Changes
               - Other helpful commands
-            - Issues
-            - Project Management
+            ---
+            ## Creating a Repo
+            ---
+            ![image](images/NewRepo.png)
+            ---
+            ![image](images/NewRepoDetails.png)
+            ---
+            ![image](images/CreatedRepo.png)
+            ---
+            # GitHub Desktop
+            ---
+            ![image](images/GithubDesktop.png)
+            ---
+            ![image](images/ConfigureGithubDesktop.png)
+            ---
+            ![image](images/CloneGithubDesktop.png)
+            ---
+            ![image](images/DownloadGithubDesktop.png)
+            ---
+            # Project Management and Issues
+            ---
+            It is important that your team can work efficiently in a short amount of time. That is why laying out your work ahead of time is very important.
+            ---
+            # Recommendations
+
+            - Start by thinking about the project goals first
+            - Have the person with the most knowledge of the tools you will be using setup the initial project
+            - Create specific issues that can easily be picked up by anyone
+            - Communicate effectively with each other about what you are working on
+            - Don't be afraid to ask a teammate or mentor for help
+            ---
+            # Issues
+            ---
+            Issues are a great way to keep track of each other's work, and to not step over each other when everyone is working at the same time.
+            ---
+            ### An issue should be:
+            
+            - Concise about the bug or feature
+            - Well defined so that anyone can work on it
+            - Actionable so that issues don't sit untouched
+            
+            Everything you need to know to work on an issue should be included in the description of the issue.
+            ---
+            # Creating an Issue
+            ---
+            ![image](images/CreateNewIssue.png)
+            ---
+            ![image](images/CreateIssuePage.png)
+            ---
+            ![image](images/IssueCreated.png)
+            ---
+            # Branches
+            ---
+            ![image](images/GitBranches.png)
+            ---
+            Branches ensure that:
+            - You don't accidentally overwrite each other's changes
+            - You can easily work on multiple changes at the same time
+            - You can easily download updates from the main branch without accidentally overwriting your own changes
+            - Others can view your work independantly on the main branch
+            ---
+            # Creating Your Branch
+            ---
+            ![image](images/FetchGithubDesktop.png)
+            ---
+            ![image](images/CreateNewBranch.png)
+            ---
+            ![image](images/NewBranchDialog.png)
+            ---
+            # Write your code! 
+            (or download your project files for no-code)
+
+            Make sure you are working in the folder that we got when we cloned the repo.
+            ---
+            ![image](images/AddingAndCommiting.png)
+            ---
+            ![image](images/PublishBranch.png)
+            ---
+            ![image](images/PreviewPullRequest.png)
+            ---
+            ![image](images/CreatePR.png)
+            ---
+            ![image](images/CreatePRGithub.png)
+            ---
+            ![image](images/MergePR.png)
+            ---
+            ![image](images/ConfirmMerge.png)
+            ---
+            ![image](images/MergedPR.png)
+            ---
+            # You are done with your change!
+
+            At this point, you should look at finding a new issue to work on.
+            ---
+            # Starting a New Change
+            ---
+            ![image](images/NewBranchAfterOld.png)
+            ---
+            # Merge Conflicts
+            ---
+            Merge conflicts happen when two people make changes to the same lines based off of the same version of the main branch.
+            ---
+            ![image](images/MergeConflict.png)
+            ---
+            ![image](images/MergeConflictResolution.png)
+            
+          </textarea>
+        </section>
+				<section data-auto-animate>
+          <pre data-id="code-animation-2"><code data-line-numbers="5-7|7-9" >
+# MySpecialProject
+A description of the project. Should include basic information about the project.
+
+<<<<<<< my-new-change
+Add some more detailed information about the project this line was change by person 1.
+=======
+Add some more detailed information about the project edited at the same time as person 1.
+>>>>>>> main
+
+          </code></pre>
+            
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation-2"><code data-line-numbers>
+# MySpecialProject
+A description of the project. Should include basic information about the project.
+
+Add some more detailed information about the project this line was change by person 1.
+
+          </code></pre>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            # Reverting Changes
+            ---
+            Sometimes there is a bug introduced by a change, a change wasn't quite ready to be put into the project. Just revert it!
+            ---
+            ![image](images/RevertStart.png)
+            ---
+            ![image](images/RevertAfter.png)
+            ---
+            It's as simple as that! Just create your PR and merge it, and your changes will be reverted!
+            ---
+            # More Resources
+
+            - https://dangitgit.com/
+            - https://docs.github.com/en/desktop
           </textarea>
         </section>
 			</div>
